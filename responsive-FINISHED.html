@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="responsive-FINISHED.css">
+  <title>Responsive Website!</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="top">
+      <header class="hero">
+      </header>
+      <div class="cta cta1">
+        <p class="price">We are hiring "INTERNS!"</p>
+        <p>Join us</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">Lined IN👇🏻</p>
+        <p><a href="https://www.linkedin.com/company/cognifyz-techonologies/posts/?feedView=all" target="_blank">HERE</a></p>
+      </div>
+
+    </div>
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="">MACHINE LEARNING</a>
+        </li>
+        <li>
+          <a href="">DATA SCIENCE</a>
+        </li>
+        <li>
+          <a href="">DATA ANALYSIS</a>
+        </li>
+        <li>
+          <a href="">POWER BI</a>
+        </li>
+        <li>
+          <a href="">WEB DEVELOPMENT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">⌚</span>
+        <h3>DSA QUESTS</h3>
+        <p>Participate in DSA quests to win exciting gifts by improving your thinking on the subject.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🏢</span>
+        <h3>Businesses</h3>
+        <p>Technology company that provides software solutions for businesses.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🤖</span>
+        <h3>AI-ML</h3>
+        <p>Range of products and services, including artificial intelligence (AI), machine learning (ML), and data analytics tools.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">👩🏻‍💻</span>
+        <h3>Tech -Driven</h3>
+        <p>Help businesses to analyze large amounts of data and make data-driven decisions in real-time.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="https://www.cognifyz.com/images/cognifyzcrop.png" alt="Yummy Taco" class="about__mockup">
+      <div class="about__details">
+        <h2>AI-powered chatbot🤖</h2>
+        <p>The chatbot platform allows businesses to automate their customer support and engagement,</p>
+        <p>This is the one you have been waiting for</p>
+        <button>Learn More →<a href="https://www.cognifyz.com/" target="_blank">here</a></button>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
+</body>
+
+</html>
